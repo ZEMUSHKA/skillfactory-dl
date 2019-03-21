@@ -17,6 +17,13 @@ def setup_common():
     os.system("pip install --force https://github.com/ZEMUSHKA/skillfactory-dl/releases/download/TqdmColab/tqdm-colab.zip")
 
 
+def download_flowers():
+    print("Downloading 102flowers.tgz...")
+    os.system("wget https://github.com/ZEMUSHKA/skillfactory-dl/releases/download/Flowers/102flowers.tgz")
+    print("Downloading imagelabels.mat...")
+    os.system("wget https://github.com/ZEMUSHKA/skillfactory-dl/releases/download/Flowers/imagelabels.mat")
+
+
 def _get_ngrok_tunnel():
     while True:
         try:
